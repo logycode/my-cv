@@ -1,6 +1,7 @@
 # CV of Tim Kranich
 
 Date of Creation: 2022-11-23
+
 Author: Tim Kranich
 
 ## Description
