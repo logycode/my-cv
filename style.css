@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Play", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+}
+
+/* what is best practice here? Use classes or use the child combinator? */
+
+body > header {
+  padding: 2vh 1vw 4vh;
+  background-color: #45818e;
+  text-align: center;
+  color: white;
+}
+
+header nav a {
+  color: orange;
+}
+
+body > main {
+  max-width: 1000px;
+  /*  BEST PRACTICES 2022
+  Desktop: Above 1440px
+  Laptop: 992px to 1440px
+  Tablet: 576px to 992px
+  Mobile: Up to 576px 
+  https://www.proximowebdesign.ie/blog/web-design-standards-for-2022
+  */
+
+  margin: 0 auto;
+  padding: 16px;
+}
