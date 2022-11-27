@@ -2,9 +2,18 @@
   box-sizing: border-box;
 }
 
+::selection {
+  background-color: #055f5b;
+  color: white;
+}
+
+html {
+  font-family: "Play", sans-serif;
+  font-size: 1.3rem;
+}
+
 body {
   margin: 0;
-  font-family: "Play", sans-serif;
 }
 
 h1,
@@ -16,29 +25,54 @@ h6 {
   text-transform: uppercase;
 }
 
-/* what is best practice here? Use classes or use the child combinator? */
+h1::after {
+  content: " 👨🏼‍💻";
+}
+
+a {
+  color: steelblue;
+}
+
+a:hover {
+  text-decoration: none;
+}
 
 body > header {
-  padding: 2vh 1vw 4vh;
-  background-color: #45818e;
+  padding: 7% 5%;
+  background-color: #055f5b;
   text-align: center;
   color: white;
 }
 
-header nav a {
-  color: orange;
+body > header > p {
+  text-transform: uppercase;
+}
+
+body > header > nav a {
+  color: deepskyblue;
+}
+body > header > a:active {
+  background-color: steelblue;
+}
+
+body > header > nav a + a {
+  margin-left: 15px;
 }
 
 body > main {
   max-width: 1000px;
-  /*  BEST PRACTICES 2022
-  Desktop: Above 1440px
-  Laptop: 992px to 1440px
-  Tablet: 576px to 992px
-  Mobile: Up to 576px 
-  https://www.proximowebdesign.ie/blog/web-design-standards-for-2022
-  */
-
   margin: 0 auto;
-  padding: 16px;
+  padding: 5%;
+}
+
+body > main > * {
+  border-bottom: 2px solid darkgrey;
+}
+
+body > main > *:last-child {
+  border-bottom: none;
+}
+
+article + article {
+  margin-top: 5%;
 }
