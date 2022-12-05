@@ -88,6 +88,10 @@ a:hover {
   text-decoration-color: white;
 }
 
+progress {
+  accent-color: rgb(10, 91, 88);
+}
+
 header:hover .hire-me,
 header:focus-within .hire-me {
   transform: scale(1.1);
@@ -284,6 +288,7 @@ article {
   .additional-info {
     background-color: var(--dark-grey);
     color: var(--off-white);
+    text-transform: uppercase;
   }
 
   .additional-info h3 {
@@ -303,14 +308,68 @@ article {
     white-space: nowrap;
   }
 
+  .languages,
+  .tools,
+  .tec-stack {
+    margin-bottom: var(--l);
+  }
+
+  .languages h3,
+  .tools h3,
+  .tec-stack h3 {
+    margin-bottom: var(--s);
+  }
+
+  .languages div,
+  .tools div,
+  .tec-stack div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  .languages div + div,
+  .tools div + div,
+  .tec-stack div + div {
+    margin-block: var(--xs);
+  }
+
   .interests {
     margin-inline: calc(-1 * var(--m));
-    padding: var(--xs) var(--m);
+    padding: var(--m) var(--m);
     background-color: var(--highlight-shade);
   }
 
   .interests h3 {
+    margin-top: 0;
     color: var(--off-white);
+  }
+
+  .interests ul {
+    display: flex;
+    padding: 0;
+    list-style-type: none;
+    justify-content: space-around;
+    font-size: 0.8em;
+    text-align: center;
+  }
+
+  .interests li {
+    flex: 1;
+    text-align: center;
+  }
+
+  .interests ul i {
+    margin-bottom: var(--s);
+    padding: var(--s);
+    color: var(--highlight-shade);
+    border-radius: 180px;
+    background-color: var(--off-white);
+  }
+
+  .reference:active {
+    background-color: salmon;
+    border: 1px solid red;
   }
 }
 
