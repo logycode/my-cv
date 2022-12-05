@@ -12,32 +12,36 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"> -->
     <link rel="stylesheet" href="style.css">
     <title>CV of Tim Kranich</title>
 </head>
 
 <body>
     <header>
-        <div class="cv-name">
+        <a href="mailto:mail.kranich@gmail.com" class="hire-me cta">Hire Me!</a>
+        <section class="site-header">
             <h1>Tim Kranich</h1>
-            <p>Frontend Developer</p>
-        </div>
-        <nav>
-            <a href="#profile">Profile</a>
-            <a href="#experience">Experience</a>
-            <a href="#skills">Skills</a>
-            <a href="#contact">Contact</a>
-        </nav>
-        <p class="cta">
-            <a href="mailto:mail.kranich@gmail.com">Hire Me!</a>
-        </p>
+            <p class="profession">Frontend Developer</p>
+            <nav>
+                <ul class="site-navigation">
+                    <li><a href="#profile">Profile</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </section>
     </header>
+
     <main>
-        <article id="profile">
+        <aside class="compressed-information" id="side-information">
+            <p>Test</p>
+        </aside>
+        <article class="profile" id="profile">
             <h2>Profile</h2>
             <p>
-                I describe myself being a Front-End Developer and real estate enthusiast. Both of these aspects are
+                I describe myself being a Frontend Developer and real estate enthusiast. Both of these aspects are
                 fully integrated into my life and, although achieved with a couple of detours, reflect the career path I
                 have always dreamed of.
             </p>
@@ -49,15 +53,16 @@
             </p>
         </article>
 
+        <h2>Experience</h2>
         <article id="experience">
-            <h2>Experience</h2>
+
             <section>
-                <header>
+                <header class="section-header">
+                    <p class="timespan highlight-color">August 2022 - today</p>
                     <h3>Junior Frontend Developer</h3>
-                    <p>August 2022 - today</p>
                     <p>Homeday GmbH Berlin</p>
                 </header>
-                <main>
+                <section>
                     <p>
                         Driving general projects within the engineering department (e.g. new onboarding process).<br>
                         Web development aligned to the strategies and goals of the company and with a clear focus on the
@@ -70,15 +75,15 @@
                         <li>JIRA for agile project management (SCRUM)</li>
                         <li>sentry.io for error tracking in live system</li>
                     </ul>
-                </main>
+                </section>
             </section>
             <section>
-                <header>
+                <header class="section-header">
+                    <p class="timespan">June 2019 - Juli 2022</p>
                     <h3>Operations Manager</h3>
-                    <p>June 2019 - Juli 2022</p>
                     <p>Homeday GmbH Berlin</p>
                 </header>
-                <main>
+                <section>
                     <p>
                         Examination of current processes alongside the entire operational organization with main focus
                         on partner realtors. <br>
@@ -90,10 +95,10 @@
                         <li>supplier research and onboarding</li>
                         <li>achieving scalability by using third party tools to automate proccesses</li>
                     </ul>
-                </main>
+                </section>
             </section>
         </article>
-
+        <!-- 
         <article id="skills">
             <h2>Skills</h2>
             <section>
@@ -149,8 +154,15 @@
                 </ul>
             </address>
         </article>
-
+-->
     </main>
+    <footer class="compressed-information" id="footer-information">
+        <div>
+            <h2>References</h2>
+            <p>Senior Frontend Developer</p>
+        </div>
+
+    </footer>
 </body>
 
 </html>
