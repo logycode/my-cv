@@ -197,6 +197,7 @@ article {
   left: -1.5rem;
 }
 
+/** for mobile only NEED TO CHANGE accordingly
 .compressed-information {
   display: flex;
   justify-content: space-between;
@@ -218,10 +219,12 @@ article {
   text-transform: uppercase;
 }
 
+*/
+
 /** breakpoints
 */
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px), print {
   body {
     display: grid;
     grid-template-columns: min-content 1fr;
@@ -365,11 +368,6 @@ article {
     color: var(--highlight-shade);
     border-radius: 180px;
     background-color: var(--off-white);
-  }
-
-  .reference:active {
-    background-color: salmon;
-    border: 1px solid red;
   }
 }
 
